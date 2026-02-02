@@ -1,0 +1,1125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    padding: 25px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.header-actions {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.btn-back {
+    background: linear-gradient(90deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background: linear-gradient(90deg, #2980b9 0%, #1f618d 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-back:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-section {
+    flex: 0.5;
+    min-width: 250px;
+    background: #f8f9ff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.results-section {
+    flex: 2.5;
+    min-width: 350px;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4b6cb7;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e1e5f2;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+input:focus, textarea:focus {
+    border-color: #4b6cb7;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(75, 108, 183, 0.1);
+}
+
+.prescription-input {
+    height: 120px;
+    resize: vertical;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+.btn {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(75, 108, 183, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-reset {
+    background: linear-gradient(90deg, #95a5a6 0%, #7f8c8d 100%);
+}
+
+.btn-reset:hover {
+    box-shadow: 0 5px 15px rgba(149, 165, 166, 0.3);
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.actions .btn {
+    flex: 1;
+    min-width: 150px;
+    justify-content: center;
+}
+
+.instructions {
+    margin-top: 30px;
+    padding: 15px;
+    background: #e8f4f8;
+    border-radius: 8px;
+    border-left: 4px solid #4b6cb7;
+}
+
+.instructions h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.instructions ul {
+    list-style-position: inside;
+    padding-left: 10px;
+    color: #555;
+}
+
+.instructions li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(75, 108, 183, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-reset {
+    background: linear-gradient(90deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.results-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.prescription-result {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    flex: 1;
+}
+
+.medicine-list {
+    max-height: 450px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #e1e5f2;
+}
+
+.medicine-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #f0f4f8;
+    transition: background-color 0.2s ease;
+}
+
+.medicine-item:hover {
+    background-color: #f8fafc;
+}
+
+.medicine-item:last-child {
+    border-bottom: none;
+}
+
+.medicine-info {
+    flex: 1;
+}
+
+.medicine-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.medicine-details {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.quantity-input {
+    width: 100px;
+    margin: 0 15px;
+    padding: 8px 12px;
+    font-size: 1rem;
+}
+
+.medicine-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #4b6cb7;
+    min-width: 80px;
+    text-align: right;
+}
+
+.not-found {
+    text-align: center;
+    color: #95a5a6;
+    padding: 40px 20px;
+    font-style: italic;
+}
+
+.alert {
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+    color: #0c5460;
+}
+
+.multiple-match-hint {
+    color: #4b6cb7;
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+
+.medicine-select {
+    padding: 8px 12px;
+    border: 1px solid #e1e5f2;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: white;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.medicine-select:focus {
+    border-color: #4b6cb7;
+    outline: none;
+}
+
+.save-options {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.save-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    min-width: 120px;
+}
+
+.prescription-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4b6cb7;
+}
+
+.prescription-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.dose-info {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dose-input {
+    width: 80px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.price-details {
+    text-align: right;
+}
+
+.subtotal {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    color: #2c3e50;
+}
+
+.shipping-fee {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+}
+
+/* 添加到处方按钮样式 */
+.add-to-prescription-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+    white-space: nowrap;
+    min-width: 100px;
+    text-align: center;
+}
+
+.add-to-prescription-btn:hover {
+    background-color: #229954;
+}
+
+.add-to-prescription-btn.added {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+.add-to-prescription-btn.added:hover {
+    background-color: #95a5a6;
+}
+
+/* 处方详情样式 */
+#prescription-section {
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prescription-details {
+    margin-top: 20px;
+}
+
+.empty-prescription {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.prescription-medicines {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.prescription-medicine-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.prescription-medicine-item .medicine-info {
+    flex: 2;
+}
+
+.prescription-medicine-item .quantity-input {
+    width: 80px;
+    margin: 0 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.prescription-medicine-item .medicine-price {
+    font-weight: bold;
+    color: #e74c3c;
+    min-width: 80px;
+    text-align: right;
+}
+
+.remove-from-prescription-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.remove-from-prescription-btn:hover {
+    background-color: #c0392b;
+}
+
+.shipping-input {
+    width: 80px;
+    padding: 3px 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+#shippingFeeLabel {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.total-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e74c3c;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.medicine-list {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #e1e5f2;
+    border-radius: 8px;
+}
+
+.medicine-item {
+    display: flex;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eef2f7;
+    align-items: flex-start;
+}
+
+.medicine-item:last-child {
+    border-bottom: none;
+}
+
+.medicine-info {
+    flex: 0 0 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.medicine-name {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+
+.medicine-details {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.medicine-details .multiple-match-hint {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.quantity-input {
+    width: 100px;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.medicine-price {
+    width: 100px;
+    text-align: right;
+    font-weight: 600;
+    color: #27ae60;
+}
+
+/* 提示信息样式 */
+.alert {
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+    color: #0c5460;
+}
+
+/* 多个匹配结果提示 */
+.multiple-match-hint {
+    font-size: 0.85rem;
+    color: #6c757d;
+    font-weight: normal;
+}
+
+.not-found {
+    color: #e74c3c;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.save-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.save-btn {
+    flex: 1;
+    min-width: 120px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.instructions {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.instructions h3 {
+    margin-bottom: 10px;
+    color: #1565c0;
+}
+
+.instructions ul {
+    padding-left: 20px;
+}
+
+.instructions li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+/* 弹窗样式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: modalOpen 0.3s ease;
+}
+
+@keyframes modalOpen {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-title {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.close {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close:hover, .close:focus {
+    color: #ddd;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 25px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 20px 25px;
+    background-color: #f8f9fa;
+    border-radius: 0 0 12px 12px;
+    border-top: 1px solid #e9ecef;
+}
+
+/* 标准处方样式 */
+.standard-prescription {
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+.prescription-info-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #4b6cb7;
+}
+
+.patient-info p, .prescription-date p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+}
+
+.medicines-table {
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+
+.medicines-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.medicines-table th, .medicines-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.medicines-table th {
+    background-color: #f8f9fa;
+    font-weight: 700;
+    color: #2c3e50;
+    border-top: 2px solid #4b6cb7;
+    border-bottom: 2px solid #4b6cb7;
+}
+
+.medicines-table tr:hover {
+    background-color: #f8fafc;
+}
+
+.medicines-table tfoot tr {
+    background-color: #f8f9fa;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.medicines-table .total-row {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+/* 医师签名样式 */
+.doctor-signature {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #4b6cb7;
+}
+
+.doctor-signature h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.signature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.signature-image {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+
+.signature-text {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #495057;
+}
+
+/* 支付二维码弹窗样式 */
+.payment-modal {
+    max-width: 500px;
+}
+
+.payment-info {
+    text-align: center;
+}
+
+.payment-info h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.qr-code-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.payment-details {
+    text-align: left;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.payment-details p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+}
+
+/* 数据管理弹窗样式 */
+.data-management-modal {
+    max-width: 1000px;
+}
+
+.record-detail-modal {
+    max-width: 800px;
+}
+
+.edit-record-modal {
+    max-width: 600px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e1e5f2;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #4b6cb7;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(75, 108, 183, 0.1);
+}
+
+.data-management-functions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.date-range-search h3, .data-list-section h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.date-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.date-input {
+    padding: 8px 12px;
+    border: 1px solid #e1e5f2;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: white;
+}
+
+.btn-search {
+    background: linear-gradient(90deg, #27ae60 0%, #2ecc71 100%);
+}
+
+.btn-export {
+    background: linear-gradient(90deg, #3498db 0%, #2980b9 100%);
+}
+
+.btn-clear {
+    background: linear-gradient(90deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.data-list-container {
+    overflow-x: auto;
+    border: 1px solid #e1e5f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.records-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.records-table th, .records-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.records-table th {
+    background-color: #f8f9fa;
+    font-weight: 700;
+    color: #2c3e50;
+    border-top: 2px solid #4b6cb7;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.records-table tr:hover {
+    background-color: #f8fafc;
+}
+
+.records-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.record-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-view, .btn-edit, .btn-delete {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-view {
+    background: linear-gradient(90deg, #3498db 0%, #2980b9 100%);
+    color: white;
+}
+
+.btn-edit {
+    background: linear-gradient(90deg, #f39c12 0%, #e67e22 100%);
+    color: white;
+}
+
+.btn-delete {
+    background: linear-gradient(90deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+}
+
+.btn-view:hover, .btn-edit:hover, .btn-delete:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#recordDetailContent {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.record-detail-section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.record-detail-section:last-child {
+    border-bottom: none;
+}
+
+.record-detail-section h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.record-detail-section p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.record-detail-section strong {
+    color: #2c3e50;
+}
+
+.medicines-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.medicines-list li {
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    border-left: 4px solid #4b6cb7;
+}
+
+/* 响应式弹窗 */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+    
+    .prescription-info-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .modal-footer {
+        flex-direction: column-reverse;
+    }
+    
+    .modal-footer .btn {
+        width: 100%;
+    }
+    
+    .data-management-functions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .date-inputs {
+        justify-content: space-between;
+    }
+    
+    .action-buttons {
+        justify-content: center;
+    }
+    
+    .records-table {
+        font-size: 0.8rem;
+    }
+    
+    .records-table th, .records-table td {
+        padding: 8px 10px;
+    }
+    
+    .record-actions {
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .btn-view, .btn-edit, .btn-delete {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+}
